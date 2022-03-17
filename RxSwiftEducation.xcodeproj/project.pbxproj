@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2D52578E27E2A889000B2B7C /* Chapter4VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D52578D27E2A889000B2B7C /* Chapter4VC.swift */; };
+		2D11D36127E38AB100389ADC /* Combinestagram.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D11D36027E38AB100389ADC /* Combinestagram.storyboard */; };
+		2D11D36327E38B7800389ADC /* Chapter4VC.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D11D36227E38B7800389ADC /* Chapter4VC.swift.swift */; };
+		2D11D36527E38BFF00389ADC /* UIImage+Collage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D11D36427E38BFF00389ADC /* UIImage+Collage.swift */; };
+		2D11D36727E38C1900389ADC /* PhotoWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D11D36627E38C1800389ADC /* PhotoWriter.swift */; };
+		2D11D36A27E38C2E00389ADC /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D11D36827E38C2E00389ADC /* PhotosViewController.swift */; };
+		2D11D36B27E38C2E00389ADC /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D11D36927E38C2E00389ADC /* PhotoCell.swift */; };
+		2D11D36D27E38C9100389ADC /* CombineinstagramAsset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D11D36C27E38C9100389ADC /* CombineinstagramAsset.xcassets */; };
 		2DD0922427E108F3000F56A3 /* Copyright.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2DD0922327E108F3000F56A3 /* Copyright.txt */; };
 		2DD0922727E117D3000F56A3 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD0922627E117D3000F56A3 /* MenuViewController.swift */; };
 		2DD0922A27E118D1000F56A3 /* Chapter3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD0922927E118D1000F56A3 /* Chapter3VC.swift */; };
@@ -46,7 +52,13 @@
 		14DD3A5C8E6BD563DD1E6841 /* Pods-RxSwiftEducation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftEducation.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftEducation/Pods-RxSwiftEducation.release.xcconfig"; sourceTree = "<group>"; };
 		196CAAA6104F6E4E41CEF8D5 /* Pods-RxSwiftEducation-RxSwiftEducationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftEducation-RxSwiftEducationUITests.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftEducation-RxSwiftEducationUITests/Pods-RxSwiftEducation-RxSwiftEducationUITests.release.xcconfig"; sourceTree = "<group>"; };
 		224D8355CB38B30C1E3F01AF /* Pods_RxSwiftEducation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftEducation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D52578D27E2A889000B2B7C /* Chapter4VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter4VC.swift; sourceTree = "<group>"; };
+		2D11D36027E38AB100389ADC /* Combinestagram.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Combinestagram.storyboard; sourceTree = "<group>"; };
+		2D11D36227E38B7800389ADC /* Chapter4VC.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter4VC.swift.swift; sourceTree = "<group>"; };
+		2D11D36427E38BFF00389ADC /* UIImage+Collage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Collage.swift"; sourceTree = "<group>"; };
+		2D11D36627E38C1800389ADC /* PhotoWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoWriter.swift; sourceTree = "<group>"; };
+		2D11D36827E38C2E00389ADC /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		2D11D36927E38C2E00389ADC /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		2D11D36C27E38C9100389ADC /* CombineinstagramAsset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CombineinstagramAsset.xcassets; sourceTree = "<group>"; };
 		2DD0922327E108F3000F56A3 /* Copyright.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Copyright.txt; sourceTree = "<group>"; };
 		2DD0922627E117D3000F56A3 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		2DD0922927E118D1000F56A3 /* Chapter3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter3VC.swift; sourceTree = "<group>"; };
@@ -102,7 +114,13 @@
 		2D52578C27E2A853000B2B7C /* Chapter4O&SInPractice */ = {
 			isa = PBXGroup;
 			children = (
-				2D52578D27E2A889000B2B7C /* Chapter4VC.swift */,
+				2D11D36027E38AB100389ADC /* Combinestagram.storyboard */,
+				2D11D36C27E38C9100389ADC /* CombineinstagramAsset.xcassets */,
+				2D11D36427E38BFF00389ADC /* UIImage+Collage.swift */,
+				2D11D36627E38C1800389ADC /* PhotoWriter.swift */,
+				2D11D36927E38C2E00389ADC /* PhotoCell.swift */,
+				2D11D36827E38C2E00389ADC /* PhotosViewController.swift */,
+				2D11D36227E38B7800389ADC /* Chapter4VC.swift.swift */,
 			);
 			path = "Chapter4O&SInPractice";
 			sourceTree = "<group>";
@@ -110,6 +128,7 @@
 		2DD0922527E1177D000F56A3 /* Chapter2Observable */ = {
 			isa = PBXGroup;
 			children = (
+				2DD0922327E108F3000F56A3 /* Copyright.txt */,
 				2DD91CC227DFB1CE007D0113 /* Chapter2VC.swift */,
 			);
 			path = Chapter2Observable;
@@ -157,7 +176,6 @@
 				2DD91CC427DFB1CE007D0113 /* Main.storyboard */,
 				2DD91CC727DFB1D0007D0113 /* Assets.xcassets */,
 				2DD91CC927DFB1D0007D0113 /* LaunchScreen.storyboard */,
-				2DD0922327E108F3000F56A3 /* Copyright.txt */,
 				2DD91CCC27DFB1D0007D0113 /* Info.plist */,
 			);
 			path = RxSwiftEducation;
@@ -317,6 +335,8 @@
 				2DD91CCB27DFB1D0007D0113 /* LaunchScreen.storyboard in Resources */,
 				2DD91CC827DFB1D0007D0113 /* Assets.xcassets in Resources */,
 				2DD91CC627DFB1CE007D0113 /* Main.storyboard in Resources */,
+				2D11D36127E38AB100389ADC /* Combinestagram.storyboard in Resources */,
+				2D11D36D27E38C9100389ADC /* CombineinstagramAsset.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,9 +481,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D11D36A27E38C2E00389ADC /* PhotosViewController.swift in Sources */,
 				2DD91CC327DFB1CE007D0113 /* Chapter2VC.swift in Sources */,
-				2D52578E27E2A889000B2B7C /* Chapter4VC.swift in Sources */,
+				2D11D36527E38BFF00389ADC /* UIImage+Collage.swift in Sources */,
 				2DD0922A27E118D1000F56A3 /* Chapter3VC.swift in Sources */,
+				2D11D36727E38C1900389ADC /* PhotoWriter.swift in Sources */,
+				2D11D36327E38B7800389ADC /* Chapter4VC.swift.swift in Sources */,
+				2D11D36B27E38C2E00389ADC /* PhotoCell.swift in Sources */,
 				2DD91CBF27DFB1CE007D0113 /* AppDelegate.swift in Sources */,
 				2DD91CC127DFB1CE007D0113 /* SceneDelegate.swift in Sources */,
 				2DD0922727E117D3000F56A3 /* MenuViewController.swift in Sources */,

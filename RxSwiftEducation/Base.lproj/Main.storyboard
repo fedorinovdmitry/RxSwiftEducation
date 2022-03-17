@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hoT-A8-7ge">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="s1f-5C-f7w">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -40,7 +40,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Chapter4"/>
                                         <connections>
-                                            <segue destination="hoT-A8-7ge" kind="show" id="1QB-Mj-RgA"/>
+                                            <segue destination="lSQ-AG-AAv" kind="show" id="PeH-I0-Q5Q"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -93,6 +93,16 @@
             </objects>
             <point key="canvasLocation" x="66.666666666666671" y="65.625"/>
         </scene>
+        <!--Chapter4VC-->
+        <scene sceneID="T8o-tE-vtV">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Combinestagram" referencedIdentifier="Chapter4VC" id="lSQ-AG-AAv" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Gsx-AD-j85"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SIb-ju-WSd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1138" y="695"/>
+        </scene>
         <!--Chapter3VC-->
         <scene sceneID="WUC-9h-4dU">
             <objects>
@@ -108,22 +118,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cwo-02-F43" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1851" y="430"/>
-        </scene>
-        <!--Chapter4VC-->
-        <scene sceneID="9Oh-I2-GKB">
-            <objects>
-                <viewController id="hoT-A8-7ge" customClass="Chapter4VC" customModule="RxSwiftEducation" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="wwn-UR-jMg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="Sv9-IR-KpH"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="8ft-iA-30Y"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Bze-gi-cag" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1851" y="1110"/>
         </scene>
     </scenes>
     <resources>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q1s-xj-yhM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Master-->
+        <scene sceneID="8ST-hp-4TG">
+            <objects>
+                <navigationController title="Master" id="xn3-VS-hLc" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="MMW-xd-GO6">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="q1s-xj-yhM" kind="relationship" relationship="rootViewController" id="lS8-07-yPR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6mr-uU-Quw" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="816" y="-669"/>
+        </scene>
+        <!--Combinestagram-->
+        <scene sceneID="qDf-5d-yf0">
+            <objects>
+                <viewController storyboardIdentifier="Chapter4VC" id="q1s-xj-yhM" customClass="Chapter4VC" customModule="RxSwiftEducation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9gd-9N-nXD"/>
+                        <viewControllerLayoutGuide type="bottom" id="GSf-FO-2n4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d9g-84-dER">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zfi-iD-y6P">
+                                <rect key="frame" x="63.5" y="632" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.67817674250000004" green="0.88699919869999999" blue="0.54654333939999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="75G-VS-p8d"/>
+                                    <constraint firstAttribute="width" secondItem="Zfi-iD-y6P" secondAttribute="height" multiplier="1:1" id="qVe-iP-efu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <state key="normal" title="Clear"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="actionClear" destination="q1s-xj-yhM" eventType="touchUpInside" id="IkC-d3-F4W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eu2-Py-zjR">
+                                <rect key="frame" x="270.5" y="632" width="80" height="80"/>
+                                <color key="backgroundColor" name="selectedControlColor" catalog="System" colorSpace="catalog"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="eu2-Py-zjR" secondAttribute="height" multiplier="1:1" id="CfY-hq-TCU"/>
+                                    <constraint firstAttribute="height" constant="80" id="Ff9-bf-04l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <state key="normal" title="Save"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="actionSave" destination="q1s-xj-yhM" eventType="touchUpInside" id="D1h-tQ-sZe"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gwl-78-wgH">
+                                <rect key="frame" x="20" y="231" width="374" height="210"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="210" id="tql-ed-KKP"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VJt-tf-a3B"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zfi-iD-y6P" firstAttribute="centerY" secondItem="d9g-84-dER" secondAttribute="centerY" multiplier="1.5" id="3T4-1T-5Ju"/>
+                            <constraint firstItem="Zfi-iD-y6P" firstAttribute="centerX" secondItem="d9g-84-dER" secondAttribute="centerX" multiplier="0.5" id="Kh0-lW-eT6"/>
+                            <constraint firstItem="gwl-78-wgH" firstAttribute="trailing" secondItem="d9g-84-dER" secondAttribute="trailingMargin" id="ZVZ-Xl-GxX"/>
+                            <constraint firstItem="gwl-78-wgH" firstAttribute="leading" secondItem="d9g-84-dER" secondAttribute="leadingMargin" id="kLO-gT-yhI"/>
+                            <constraint firstItem="eu2-Py-zjR" firstAttribute="centerY" secondItem="d9g-84-dER" secondAttribute="centerY" multiplier="1.5" id="s3F-ox-Ngt"/>
+                            <constraint firstItem="eu2-Py-zjR" firstAttribute="centerX" secondItem="d9g-84-dER" secondAttribute="centerX" multiplier="1.5" id="tHs-zV-SeN"/>
+                            <constraint firstItem="gwl-78-wgH" firstAttribute="centerY" secondItem="d9g-84-dER" secondAttribute="centerY" multiplier="0.75" id="zp7-NI-uVe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Combinestagram" id="oOP-Id-Z2J">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="oB8-HV-Vou">
+                            <connections>
+                                <action selector="actionAdd" destination="q1s-xj-yhM" id="pJQ-tm-Fqs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="buttonClear" destination="Zfi-iD-y6P" id="o2A-K0-fuR"/>
+                        <outlet property="buttonSave" destination="eu2-Py-zjR" id="WSl-kX-i0V"/>
+                        <outlet property="imagePreview" destination="gwl-78-wgH" id="zq9-Xa-2Xf"/>
+                        <outlet property="itemAdd" destination="oB8-HV-Vou" id="a80-76-hUf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6CV-4k-6oS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1605" y="-670"/>
+        </scene>
+        <!--Add Photos-->
+        <scene sceneID="Hlh-Tx-ygi">
+            <objects>
+                <collectionViewController storyboardIdentifier="PhotosViewController" title="Add Photos" id="iQR-J1-dA7" customClass="PhotosViewController" customModule="RxSwiftEducation" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" prefetchingEnabled="NO" id="JBp-Nr-gA3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gaS-fX-R75">
+                            <size key="itemSize" width="80" height="80"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="8" minY="16" maxX="8" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="SoZ-t0-Tap" customClass="PhotoCell" customModule="Combinestagram" customModuleProvider="target">
+                                <rect key="frame" x="8" y="16" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pIy-1a-Lzd">
+                                            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" name="selectedControlColor" catalog="System" colorSpace="catalog"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="pIy-1a-Lzd" secondAttribute="bottom" id="0PR-7Q-MJa"/>
+                                    <constraint firstItem="pIy-1a-Lzd" firstAttribute="top" secondItem="SoZ-t0-Tap" secondAttribute="top" id="5HQ-K1-6f2"/>
+                                    <constraint firstAttribute="trailing" secondItem="pIy-1a-Lzd" secondAttribute="trailing" id="hwL-aY-WQq"/>
+                                    <constraint firstItem="pIy-1a-Lzd" firstAttribute="leading" secondItem="SoZ-t0-Tap" secondAttribute="leading" id="qpB-mR-bKa"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="pIy-1a-Lzd" id="D0c-8w-Qyh"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="iQR-J1-dA7" id="mYM-tp-CKy"/>
+                            <outlet property="delegate" destination="iQR-J1-dA7" id="ePJ-1O-L7F"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2jr-01-1QJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2404" y="-671"/>
+        </scene>
+    </scenes>
+</document>
