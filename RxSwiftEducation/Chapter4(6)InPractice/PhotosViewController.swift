@@ -5,6 +5,8 @@ import RxSwift
 
 class PhotosViewController: UICollectionViewController {
     
+    private let bag = DisposeBag()
+    
     private let selectedPhotosSubject = PublishSubject<UIImage>()
     var selectedPhotos: Observable<UIImage> { selectedPhotosSubject.asObservable() }
     
@@ -30,6 +32,27 @@ class PhotosViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let authorized = PHPhotoLibrary.authorized.share()
+        authorized
+            .skip { !$0 }
+            .take(1)
+            .subscribe(onNext: { [weak self] _ in
+                self?.photos = PhotosViewController.loadPhotos()
+                DispatchQueue.main.async {
+                    self?.collectionView?.reloadData()
+                }
+            })
+            .disposed(by: bag)
+        
+        authorized
+            .skip(1)
+            .takeLast(1)
+            .filter { !$0 }
+            .subscribe(onNext: { [weak self] _ in
+                guard let errorMessage = self?.errorMessage else { return }
+                DispatchQueue.main.async(execute: errorMessage)
+            })
+            .disposed(by: bag)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -37,6 +60,18 @@ class PhotosViewController: UICollectionViewController {
         selectedPhotosSubject.onCompleted()
     }
     
+    private func errorMessage() {
+        alert("No access to Camera Roll",
+              description: "You can grant access to Combinestagram from the Settings app")
+            .asObservable()
+            .take(for: .seconds(5), scheduler: MainScheduler.instance)
+            .subscribe(onCompleted: { [weak self] in
+                self?.dismiss(animated: true, completion: nil)
+                self?.navigationController?.popViewController(animated: true)
+            })
+            .disposed(by: bag)
+    }
+              
     // MARK: UICollectionView
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

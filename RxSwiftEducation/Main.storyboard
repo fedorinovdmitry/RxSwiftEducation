@@ -16,11 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zI1-h2-SJi">
-                                <rect key="frame" x="165" y="374" width="84.5" height="148"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zI1-h2-SJi">
+                                <rect key="frame" x="155" y="371" width="104" height="154"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sMN-wq-S5d">
-                                        <rect key="frame" x="0.0" y="0.0" width="84.5" height="31"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="104" height="31"/>
                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Chapter2">
@@ -31,7 +31,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HC7-P5-1Qj">
-                                        <rect key="frame" x="0.0" y="39" width="84.5" height="31"/>
+                                        <rect key="frame" x="0.0" y="41" width="104" height="31"/>
                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Chapter3">
@@ -42,10 +42,10 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUZ-gB-wNI">
-                                        <rect key="frame" x="0.0" y="78" width="84.5" height="31"/>
+                                        <rect key="frame" x="0.0" y="82" width="104" height="31"/>
                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Chapter4">
+                                        <buttonConfiguration key="configuration" style="plain" title="Chapter4(6)">
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
@@ -53,7 +53,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="555-K3-ynN">
-                                        <rect key="frame" x="0.0" y="117" width="84.5" height="31"/>
+                                        <rect key="frame" x="0.0" y="123" width="104" height="31"/>
                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Chapter5">
@@ -121,7 +121,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SIb-ju-WSd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1138" y="695"/>
+            <point key="canvasLocation" x="1851" y="831"/>
         </scene>
         <!--Chapter3VC-->
         <scene sceneID="WUC-9h-4dU">
@@ -153,7 +153,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bvC-aU-Xv8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2552" y="430"/>
+            <point key="canvasLocation" x="1851" y="1306"/>
         </scene>
     </scenes>
     <resources>
