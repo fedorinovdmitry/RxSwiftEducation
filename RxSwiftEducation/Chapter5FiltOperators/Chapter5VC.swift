@@ -230,7 +230,7 @@ class Chapter5VC: UIViewController {
                 .disposed(by: disposeBag)
         }
         
-        // MARK: - distinctUntilChanged(_:)
+        // MARK: - Challenge 1
         
         example(of: "Challenge 1") {
             let disposeBag = DisposeBag()
