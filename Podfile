@@ -9,6 +9,7 @@ target 'RxSwiftEducation' do
   pod 'RxCocoa'
   pod 'RxRelay'
   pod 'RxSwiftExt'
+  pod 'Kingfisher'
 
   target 'RxSwiftEducationTests' do
     inherit! :search_paths

@@ -9,7 +9,12 @@ import UIKit
 import RxSwift
 import RxRelay
 
+fileprivate func print<T: CustomStringConvertible>(label: String, event: RxSwift.Event<T>) {
+    Swift.print(label, (event.element ?? event.error) ?? event)
+}
+
 class Chapter3VC: UIViewController {
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

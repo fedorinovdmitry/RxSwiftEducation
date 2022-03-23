@@ -8,10 +8,6 @@
 import UIKit
 import RxSwift
 
-func print<T: CustomStringConvertible>(label: String, event: Event<T>) {
-    Swift.print(label, (event.element ?? event.error) ?? event)
-}
-
 public func example(of description: String,
                     action: () -> Void) {
     print("\n--- Example of:", description, "---")
