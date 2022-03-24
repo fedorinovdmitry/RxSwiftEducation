@@ -23,7 +23,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zI1-h2-SJi">
-                                                <rect key="frame" x="146.5" y="80" width="121" height="736"/>
+                                                <rect key="frame" x="146.5" y="64.5" width="121" height="767"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sMN-wq-S5d">
                                                         <rect key="frame" x="0.0" y="0.0" width="121" height="46.5"/>
@@ -92,23 +92,29 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4K0-WO-CpG">
-                                                        <rect key="frame" x="0.0" y="399" width="121" height="31"/>
+                                                        <rect key="frame" x="0.0" y="399" width="121" height="46.5"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Chapter9">
+                                                        <buttonConfiguration key="configuration" style="plain" title="Chapter9" subtitle="CombiningOper">
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <segue destination="Y6J-dC-old" kind="show" id="mRk-W0-NVv"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Lv-xl-nhD">
-                                                        <rect key="frame" x="0.0" y="450" width="121" height="31"/>
+                                                        <rect key="frame" x="0.0" y="465.5" width="121" height="46.5"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Chapter10">
+                                                        <buttonConfiguration key="configuration" style="plain" title="Chapter10" subtitle="inPractice">
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <segue destination="Fso-fi-boQ" kind="show" id="wGj-6N-BcA"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIb-WV-jrh">
-                                                        <rect key="frame" x="0.0" y="501" width="121" height="31"/>
+                                                        <rect key="frame" x="0.0" y="532" width="121" height="31"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Chapter11">
@@ -116,7 +122,7 @@
                                                         </buttonConfiguration>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAv-r6-E93">
-                                                        <rect key="frame" x="0.0" y="552" width="121" height="31"/>
+                                                        <rect key="frame" x="0.0" y="583" width="121" height="31"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Chapter12">
@@ -124,7 +130,7 @@
                                                         </buttonConfiguration>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sxr-Q6-dGv">
-                                                        <rect key="frame" x="0.0" y="603" width="121" height="31"/>
+                                                        <rect key="frame" x="0.0" y="634" width="121" height="31"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Chapter13">
@@ -132,7 +138,7 @@
                                                         </buttonConfiguration>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n86-67-aII">
-                                                        <rect key="frame" x="0.0" y="654" width="121" height="31"/>
+                                                        <rect key="frame" x="0.0" y="685" width="121" height="31"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Chapter14">
@@ -140,7 +146,7 @@
                                                         </buttonConfiguration>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25a-fA-R0y">
-                                                        <rect key="frame" x="0.0" y="705" width="121" height="31"/>
+                                                        <rect key="frame" x="0.0" y="736" width="121" height="31"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Chapter15">
@@ -326,7 +332,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="roQ-bm-0eJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1909" y="-143"/>
+            <point key="canvasLocation" x="1851" y="-143"/>
         </scene>
         <!--Chapter8inPractice-->
         <scene sceneID="gca-D3-7Xu">
@@ -337,6 +343,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="puq-QT-em5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1766" y="-34"/>
+        </scene>
+        <!--Chapter9VC-->
+        <scene sceneID="Z8M-i8-yZ6">
+            <objects>
+                <viewController id="Y6J-dC-old" customClass="Chapter9VC" customModule="RxSwiftEducation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dpi-Bl-cMS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Look at console" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="op7-0L-RIt">
+                                <rect key="frame" x="147" y="39.5" width="120" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="803-Gc-QOy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="op7-0L-RIt" firstAttribute="centerY" secondItem="dpi-Bl-cMS" secondAttribute="centerY" id="pKr-ng-iiU"/>
+                            <constraint firstItem="op7-0L-RIt" firstAttribute="centerX" secondItem="dpi-Bl-cMS" secondAttribute="centerX" id="y4g-Ip-Tzd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="61B-o0-E5Z"/>
+                    <size key="freeformSize" width="414" height="100"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qRj-A1-gtM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1880" y="75"/>
+        </scene>
+        <!--Chapter10inPractice-->
+        <scene sceneID="htY-Ya-cb3">
+            <objects>
+                <viewControllerPlaceholder storyboardName="OurPlanet" referencedIdentifier="CategoriesViewController" id="Fso-fi-boQ" userLabel="Chapter10inPractice" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="xKe-Py-HKV"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XSR-So-04g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1765" y="169"/>
         </scene>
     </scenes>
     <resources>
