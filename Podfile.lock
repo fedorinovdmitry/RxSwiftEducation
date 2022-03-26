@@ -1,5 +1,7 @@
 PODS:
   - Kingfisher (7.2.0)
+  - "NSObject+Rx (5.2.2)":
+    - RxSwift (~> 6.2)
   - RxCocoa (6.5.0):
     - RxRelay (= 6.5.0)
     - RxSwift (= 6.5.0)
@@ -19,6 +21,7 @@ PODS:
 
 DEPENDENCIES:
   - Kingfisher
+  - "NSObject+Rx"
   - RxCocoa
   - RxRelay
   - RxSwift
@@ -28,6 +31,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Kingfisher
+    - "NSObject+Rx"
     - RxCocoa
     - RxRelay
     - RxSwift
@@ -36,12 +40,13 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Kingfisher: 3ac0b75b155cabc0e544877d1a4deea29feece92
+  "NSObject+Rx": 61cf1f7306a73dcef8b36649198af0813ec18dfd
   RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
   RxSwiftExt: d61c4b9b06e0a448041b1c659e0f1b5c5a035afc
   RxTest: eb2d23adefc5a5ebf5779c7792fa3edfe6ebcc17
 
-PODFILE CHECKSUM: e981d703f52cf1bf891de0d862046432649b22c8
+PODFILE CHECKSUM: e4e7027a9770e85cff0b15d562b394a5149b76fa
 
 COCOAPODS: 1.11.3

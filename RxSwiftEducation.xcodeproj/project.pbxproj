@@ -34,6 +34,7 @@
 		2DBA19AB27ECDBED00B3C4C9 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA19A827ECDBED00B3C4C9 /* EventsViewController.swift */; };
 		2DBA19AC27ECDBED00B3C4C9 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA19A927ECDBED00B3C4C9 /* EventCell.swift */; };
 		2DBA19AD27ECDBED00B3C4C9 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA19AA27ECDBED00B3C4C9 /* CategoriesViewController.swift */; };
+		2DBA19AF27EF23B500B3C4C9 /* DownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA19AE27EF23B400B3C4C9 /* DownloadView.swift */; };
 		2DD0922427E108F3000F56A3 /* Copyright.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2DD0922327E108F3000F56A3 /* Copyright.txt */; };
 		2DD0922727E117D3000F56A3 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD0922627E117D3000F56A3 /* MenuViewController.swift */; };
 		2DD0922A27E118D1000F56A3 /* Chapter3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD0922927E118D1000F56A3 /* Chapter3VC.swift */; };
@@ -98,6 +99,7 @@
 		2DBA19A827ECDBED00B3C4C9 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		2DBA19A927ECDBED00B3C4C9 /* EventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		2DBA19AA27ECDBED00B3C4C9 /* CategoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
+		2DBA19AE27EF23B400B3C4C9 /* DownloadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadView.swift; sourceTree = "<group>"; };
 		2DD0922327E108F3000F56A3 /* Copyright.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Copyright.txt; sourceTree = "<group>"; };
 		2DD0922627E117D3000F56A3 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		2DD0922927E118D1000F56A3 /* Chapter3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter3VC.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				2DBA19AA27ECDBED00B3C4C9 /* CategoriesViewController.swift */,
 				2DBA19A927ECDBED00B3C4C9 /* EventCell.swift */,
 				2DBA19A827ECDBED00B3C4C9 /* EventsViewController.swift */,
+				2DBA19AE27EF23B400B3C4C9 /* DownloadView.swift */,
 				2DBA199927ECDB7A00B3C4C9 /* Model */,
 			);
 			path = "Chapter9(10)CombiningOperators";
@@ -576,6 +579,7 @@
 				2D11D36A27E38C2E00389ADC /* PhotosViewController.swift in Sources */,
 				2D122DFC27E8DBD1003FE193 /* PHPhotoLibrary+Rx.swift.swift in Sources */,
 				2DD91CC327DFB1CE007D0113 /* Chapter2VC.swift in Sources */,
+				2DBA19AF27EF23B500B3C4C9 /* DownloadView.swift in Sources */,
 				2D122E0427EB7907003FE193 /* ActivityController.swift in Sources */,
 				2DBA19A527ECDB7A00B3C4C9 /* EOEnvelope.swift in Sources */,
 				2DBA199827ECA0EE00B3C4C9 /* Chapter9VC.swift in Sources */,
