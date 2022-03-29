@@ -20,6 +20,11 @@
 		2D122E0427EB7907003FE193 /* ActivityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D122E0327EB7907003FE193 /* ActivityController.swift */; };
 		2D122E0627EB7B9A003FE193 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D122E0527EB7B9A003FE193 /* Event.swift */; };
 		2D122E0927EB7C02003FE193 /* GitFeed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D122E0827EB7C02003FE193 /* GitFeed.storyboard */; };
+		2D2080D127F220460078EA29 /* Chapter11VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2080D027F220460078EA29 /* Chapter11VC.swift */; };
+		2D2080EA27F223E30078EA29 /* TimelineViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2080E427F223E20078EA29 /* TimelineViewBase.swift */; };
+		2D2080EB27F223E30078EA29 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2080E527F223E30078EA29 /* Timer.swift */; };
+		2D2080EC27F223E30078EA29 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2080E627F223E30078EA29 /* StackView.swift */; };
+		2D2080ED27F223E30078EA29 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2080E727F223E30078EA29 /* Label.swift */; };
 		2D276E1E27E5D396001378CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D276E1D27E5D396001378CF /* Main.storyboard */; };
 		2D276E2027E5D3A8001378CF /* Chapter5VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D276E1F27E5D3A8001378CF /* Chapter5VC.swift */; };
 		2D276E2227E72C25001378CF /* UIImage+Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D276E2127E72C25001378CF /* UIImage+Hash.swift */; };
@@ -85,6 +90,11 @@
 		2D122E0327EB7907003FE193 /* ActivityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityController.swift; sourceTree = "<group>"; };
 		2D122E0527EB7B9A003FE193 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		2D122E0827EB7C02003FE193 /* GitFeed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GitFeed.storyboard; sourceTree = "<group>"; };
+		2D2080D027F220460078EA29 /* Chapter11VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter11VC.swift; sourceTree = "<group>"; };
+		2D2080E427F223E20078EA29 /* TimelineViewBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewBase.swift; sourceTree = "<group>"; };
+		2D2080E527F223E30078EA29 /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		2D2080E627F223E30078EA29 /* StackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
+		2D2080E727F223E30078EA29 /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		2D276E1D27E5D396001378CF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		2D276E1F27E5D3A8001378CF /* Chapter5VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chapter5VC.swift; sourceTree = "<group>"; };
 		2D276E2127E72C25001378CF /* UIImage+Hash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Hash.swift"; sourceTree = "<group>"; };
@@ -160,6 +170,26 @@
 				2D122E0327EB7907003FE193 /* ActivityController.swift */,
 			);
 			path = "Chapter7(8)TransformingOper";
+			sourceTree = "<group>";
+		};
+		2D2080CF27F220240078EA29 /* Chapter11TimebasedOp */ = {
+			isa = PBXGroup;
+			children = (
+				2D2080E127F223D80078EA29 /* support */,
+				2D2080D027F220460078EA29 /* Chapter11VC.swift */,
+			);
+			path = Chapter11TimebasedOp;
+			sourceTree = "<group>";
+		};
+		2D2080E127F223D80078EA29 /* support */ = {
+			isa = PBXGroup;
+			children = (
+				2D2080E727F223E30078EA29 /* Label.swift */,
+				2D2080E627F223E30078EA29 /* StackView.swift */,
+				2D2080E427F223E20078EA29 /* TimelineViewBase.swift */,
+				2D2080E527F223E30078EA29 /* Timer.swift */,
+			);
+			path = support;
 			sourceTree = "<group>";
 		};
 		2D276E1C27E5D358001378CF /* Chapter5FiltOperators */ = {
@@ -265,6 +295,7 @@
 				2D276E1C27E5D358001378CF /* Chapter5FiltOperators */,
 				2D122DFF27E9C2B2003FE193 /* Chapter7(8)TransformingOper */,
 				2DBA199627ECA0C400B3C4C9 /* Chapter9(10)CombiningOperators */,
+				2D2080CF27F220240078EA29 /* Chapter11TimebasedOp */,
 				2D276E1D27E5D396001378CF /* Main.storyboard */,
 				2DD91CC727DFB1D0007D0113 /* Assets.xcassets */,
 				2DD91CC927DFB1D0007D0113 /* LaunchScreen.storyboard */,
@@ -583,8 +614,10 @@
 				2D122E0427EB7907003FE193 /* ActivityController.swift in Sources */,
 				2DBA19A527ECDB7A00B3C4C9 /* EOEnvelope.swift in Sources */,
 				2DBA199827ECA0EE00B3C4C9 /* Chapter9VC.swift in Sources */,
+				2D2080EB27F223E30078EA29 /* Timer.swift in Sources */,
 				2D11D36527E38BFF00389ADC /* UIImage+Collage.swift in Sources */,
 				2DD0922A27E118D1000F56A3 /* Chapter3VC.swift in Sources */,
+				2D2080EC27F223E30078EA29 /* StackView.swift in Sources */,
 				2DBA19AB27ECDBED00B3C4C9 /* EventsViewController.swift in Sources */,
 				2D11D36727E38C1900389ADC /* PhotoWriter.swift in Sources */,
 				2DBA19AD27ECDBED00B3C4C9 /* CategoriesViewController.swift in Sources */,
@@ -600,8 +633,11 @@
 				2DBA19AC27ECDBED00B3C4C9 /* EventCell.swift in Sources */,
 				2D276E2227E72C25001378CF /* UIImage+Hash.swift in Sources */,
 				2DBA19A327ECDB7A00B3C4C9 /* EOCategory.swift in Sources */,
+				2D2080D127F220460078EA29 /* Chapter11VC.swift in Sources */,
 				2DD0922727E117D3000F56A3 /* MenuViewController.swift in Sources */,
 				2D276E2027E5D3A8001378CF /* Chapter5VC.swift in Sources */,
+				2D2080EA27F223E30078EA29 /* TimelineViewBase.swift in Sources */,
+				2D2080ED27F223E30078EA29 /* Label.swift in Sources */,
 				2DBA19A427ECDB7A00B3C4C9 /* EONET.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
