@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="weather.ttf">
+            <string>Flaticon</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--WundercastVC-->
+        <scene sceneID="k8G-Og-C5c">
+            <objects>
+                <viewController storyboardIdentifier="WundercastVC" id="x1y-ao-X4y" customClass="WundercastVC" customModule="RxSwiftEducation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y0G-u9-Dm9"/>
+                        <viewControllerLayoutGuide type="bottom" id="CQB-sd-zcw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QvZ-B9-OV1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="City's Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mqo-gm-YOK">
+                                <rect key="frame" x="20" y="60" width="374" height="40"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="W" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zM-1T-2tj">
+                                <rect key="frame" x="32" y="293" width="350" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6zM-1T-2tj" secondAttribute="height" multiplier="1:1" id="JZM-Xw-I10"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Flaticon" family="Flaticon" pointSize="220"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="All-uL-yOT">
+                                <rect key="frame" x="32" y="256" width="15" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wi4-jm-7v9">
+                                <rect key="frame" x="364.5" y="256" width="17.5" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fjt-ac-sbg">
+                                <rect key="frame" x="32" y="651" width="350" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qNE-JL-MWy"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="6zM-1T-2tj" secondAttribute="trailing" constant="32" id="0Qo-lK-7q0"/>
+                            <constraint firstItem="All-uL-yOT" firstAttribute="leading" secondItem="6zM-1T-2tj" secondAttribute="leading" id="1cd-fk-NrU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mqo-gm-YOK" secondAttribute="trailing" id="5Hk-7c-WXV"/>
+                            <constraint firstItem="6zM-1T-2tj" firstAttribute="top" secondItem="All-uL-yOT" secondAttribute="bottom" constant="8" id="5bE-kV-gpI"/>
+                            <constraint firstItem="6zM-1T-2tj" firstAttribute="centerX" secondItem="QvZ-B9-OV1" secondAttribute="centerX" id="J8q-m8-pcb"/>
+                            <constraint firstItem="Fjt-ac-sbg" firstAttribute="width" secondItem="6zM-1T-2tj" secondAttribute="width" id="OtK-YW-ojV"/>
+                            <constraint firstItem="6zM-1T-2tj" firstAttribute="top" secondItem="Wi4-jm-7v9" secondAttribute="bottom" constant="8" id="WuZ-aG-b4D"/>
+                            <constraint firstItem="6zM-1T-2tj" firstAttribute="centerY" secondItem="QvZ-B9-OV1" secondAttribute="centerY" constant="20" id="cdE-zU-8ra"/>
+                            <constraint firstItem="Mqo-gm-YOK" firstAttribute="top" secondItem="Y0G-u9-Dm9" secondAttribute="bottom" constant="16" id="dl6-0u-qQM"/>
+                            <constraint firstItem="6zM-1T-2tj" firstAttribute="leading" secondItem="QvZ-B9-OV1" secondAttribute="leading" constant="32" id="gBO-w4-bsi"/>
+                            <constraint firstItem="Fjt-ac-sbg" firstAttribute="top" secondItem="6zM-1T-2tj" secondAttribute="bottom" constant="8" id="jdR-Ew-I26"/>
+                            <constraint firstItem="Wi4-jm-7v9" firstAttribute="trailing" secondItem="6zM-1T-2tj" secondAttribute="trailing" id="mfW-jt-FKG"/>
+                            <constraint firstItem="Fjt-ac-sbg" firstAttribute="centerX" secondItem="6zM-1T-2tj" secondAttribute="centerX" id="pcT-wq-vzo"/>
+                            <constraint firstItem="Mqo-gm-YOK" firstAttribute="leading" secondItem="QvZ-B9-OV1" secondAttribute="leadingMargin" id="txe-2x-9Tj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cityNameLabel" destination="Fjt-ac-sbg" id="Oh5-Vv-wqf"/>
+                        <outlet property="humidityLabel" destination="Wi4-jm-7v9" id="SZs-6i-IfH"/>
+                        <outlet property="iconLabel" destination="6zM-1T-2tj" id="RxH-Sz-Sov"/>
+                        <outlet property="searchCityName" destination="Mqo-gm-YOK" id="GDN-Pr-Oc7"/>
+                        <outlet property="tempLabel" destination="All-uL-yOT" id="zHl-0o-UCP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1nd-7U-HNg" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21.600000000000001" y="36.431784107946029"/>
+        </scene>
+    </scenes>
+</document>
