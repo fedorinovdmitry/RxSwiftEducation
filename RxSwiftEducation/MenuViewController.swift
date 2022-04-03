@@ -16,10 +16,5 @@ public func example(of description: String,
 
 class MenuViewController: UIViewController {
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
 
 }
