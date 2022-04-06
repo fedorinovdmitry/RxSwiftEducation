@@ -8,6 +8,12 @@ import MapKit
 
 class ApiController {
     
+    enum ApiError: Error {
+        case cityNotFound
+        case serverFailure
+        case invalidKey
+    }
+    
     struct Weather: Decodable {
         let cityName: String
         let temperature: Int
@@ -78,7 +84,8 @@ class ApiController {
     
     /// The api key to communicate with openweathermap.org
     /// Create you own on https://home.openweathermap.org/users/sign_up
-    private let apiKey = "ea159bbd939648d45df02bdf47691a0b"
+    //ea159bbd939648d45df02bdf47691a0b
+    let apiKey = BehaviorSubject(value: "ea159bbd939648d45df02bdf47691a0b")
     
     /// API base URL
     let baseURL = URL(string: "http://api.openweathermap.org/data/2.5")!
@@ -114,7 +121,7 @@ class ApiController {
     private func buildRequest(method: String = "GET", pathComponent: String, params: [(String, String)]) -> Observable<Data> {
         let url = baseURL.appendingPathComponent(pathComponent)
         var request = URLRequest(url: url)
-        let keyQueryItem = URLQueryItem(name: "appid", value: apiKey)
+        let keyQueryItem = URLQueryItem(name: "appid", value: try? self.apiKey.value())
         let unitsQueryItem = URLQueryItem(name: "units", value: "metric")
         let urlComponents = NSURLComponents(url: url, resolvingAgainstBaseURL: true)!
         
@@ -137,7 +144,19 @@ class ApiController {
         
         let session = URLSession.shared
         
-        return session.rx.data(request: request)
+        return session.rx.response(request: request)
+            .map { response, data in
+                switch response.statusCode {
+                case 401:
+                    throw ApiError.invalidKey
+                case 200 ..< 300:
+                    return data
+                case 400 ..< 500:
+                    throw ApiError.cityNotFound
+                default:
+                    throw ApiError.serverFailure
+                }
+            }
     }
     
 }

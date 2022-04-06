@@ -13,6 +13,8 @@ import CoreLocation
 
 class WundercastVC: UIViewController {
     
+    private var cache = [String: ApiController.Weather]()
+    
     @IBOutlet private var mapView: MKMapView!
     @IBOutlet private var mapButton: UIButton!
     @IBOutlet private var geoLocationButton: UIButton!
@@ -27,8 +29,24 @@ class WundercastVC: UIViewController {
     
     private let locationManager = CLLocationManager()
     
+    private static let maxAttempts = 4
+    
+    var keyTextField: UITextField?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        _ = RxReachability.shared.startMonitor("openweathermap.org")
+        
+        let button = UIButton(frame: CGRect(x: 50, y: 150, width: 100, height: 50))
+        button.backgroundColor = .yellow
+        view.addSubview(button)
+        
+        button.rx.tap
+          .subscribe(onNext: { [weak self] _ in
+            self?.requestKey()
+          })
+          .disposed(by:bag)
         
         mapButton.rx.tap
             .subscribe(onNext: {
@@ -105,11 +123,26 @@ class WundercastVC: UIViewController {
             .filter { !$0.isEmpty }
         
         let textSearch = searchInput
-            .flatMap { city in
+            .flatMap { text in
                 ApiController.shared
-                    .currentWeather(for: city)
-                    .catchAndReturn(.empty)
-            }
+                    .currentWeather(for: text)
+                    .do(
+                        onNext: { [weak self] data in
+                            self?.cache[text] = data
+                        },
+                        onError: { error in
+                            DispatchQueue.main.async { [weak self] in
+                                guard let self = self else { return }
+                                self.showError(error: error)
+                            }
+                        }
+                    )
+                    .retry(when: self.retryHandler)
+                    .catch({ [weak self] _ in
+                        Observable.just(self?.cache[text] ?? .empty)
+                    })
+                }
+        
         
         let search = Observable
             .merge(geoSearch, textSearch)
@@ -218,6 +251,71 @@ class WundercastVC: UIViewController {
         iconLabel.textColor = UIColor.cream
         cityNameLabel.textColor = UIColor.cream
     }
+    
+    func requestKey() {
+        func configurationTextField(textField: UITextField!) {
+            self.keyTextField = textField
+        }
+        
+        let alert = UIAlertController(title: "Api Key",
+                                      message: "Add the api key:",
+                                      preferredStyle: UIAlertController.Style.alert)
+        
+        alert.addTextField(configurationHandler: configurationTextField)
+        
+        alert.addAction(UIAlertAction(title: "Ok", style: .default) { [weak self] _ in
+            ApiController.shared.apiKey.onNext(self?.keyTextField?.text ?? "")
+        })
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.destructive))
+        
+        self.present(alert, animated: true)
+    }
+    
+    // MARK: - Error handling
+    
+    private let retryHandler: (Observable<Error>) -> Observable<Int> = { e in
+        return e.enumerated().flatMap { attempt, error -> Observable<Int> in
+            
+            if attempt >= WundercastVC.maxAttempts - 1 {
+                return Observable.error(error)
+            } else if let casted = error as? ApiController.ApiError,
+                      casted == .invalidKey {
+                
+                return ApiController.shared.apiKey
+                    .filter { !$0.isEmpty }
+                    .map { _ in 1 }
+                
+            }else if (error as NSError).code == -1009 {
+                
+                return RxReachability.shared.status
+                    .filter({ $0 == .online })
+                    .map( { _ in 1} )
+            }
+            print("== retrying after \(attempt + 1) seconds ==")
+            return Observable<Int>.timer(.seconds(attempt + 1),
+                                         scheduler: MainScheduler.instance)
+                .take(1)
+        }
+    }
+    
+    
+    
+    private func showError(error e: Error) {
+        guard let e = e as? ApiController.ApiError else {
+            InfoView.showIn(viewController: self, message: "An error occurred")
+            return
+        }
+        switch e {
+        case .cityNotFound:
+            InfoView.showIn(viewController: self, message: "City Name is invalid")
+        case .serverFailure:
+            InfoView.showIn(viewController: self, message: "Server error")
+        case .invalidKey:
+            InfoView.showIn(viewController: self, message: "Key is invalid")
+        }
+    }
+    
 }
 
 extension WundercastVC: MKMapViewDelegate {

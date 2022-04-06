@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D0352A327FB2BD3005B038E /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D03529F27FB2BD3005B038E /* InfoView.swift */; };
+		2D0352A427FB2BD3005B038E /* InfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D0352A027FB2BD3005B038E /* InfoView.xib */; };
+		2D0352A827FDF0E2005B038E /* RxReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0352A727FDF0E2005B038E /* RxReachability.swift */; };
 		2D11D36127E38AB100389ADC /* Combinestagram.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D11D36027E38AB100389ADC /* Combinestagram.storyboard */; };
 		2D11D36327E38B7800389ADC /* Chapter4VC.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D11D36227E38B7800389ADC /* Chapter4VC.swift.swift */; };
 		2D11D36527E38BFF00389ADC /* UIImage+Collage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D11D36427E38BFF00389ADC /* UIImage+Collage.swift */; };
@@ -86,6 +89,9 @@
 		14DD3A5C8E6BD563DD1E6841 /* Pods-RxSwiftEducation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftEducation.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftEducation/Pods-RxSwiftEducation.release.xcconfig"; sourceTree = "<group>"; };
 		196CAAA6104F6E4E41CEF8D5 /* Pods-RxSwiftEducation-RxSwiftEducationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftEducation-RxSwiftEducationUITests.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftEducation-RxSwiftEducationUITests/Pods-RxSwiftEducation-RxSwiftEducationUITests.release.xcconfig"; sourceTree = "<group>"; };
 		224D8355CB38B30C1E3F01AF /* Pods_RxSwiftEducation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftEducation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D03529F27FB2BD3005B038E /* InfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		2D0352A027FB2BD3005B038E /* InfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoView.xib; sourceTree = "<group>"; };
+		2D0352A727FDF0E2005B038E /* RxReachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxReachability.swift; sourceTree = "<group>"; };
 		2D11D36027E38AB100389ADC /* Combinestagram.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Combinestagram.storyboard; sourceTree = "<group>"; };
 		2D11D36227E38B7800389ADC /* Chapter4VC.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter4VC.swift.swift; sourceTree = "<group>"; };
 		2D11D36427E38BFF00389ADC /* UIImage+Collage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Collage.swift"; sourceTree = "<group>"; };
@@ -179,6 +185,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D03529E27FB2BD3005B038E /* InfoView */ = {
+			isa = PBXGroup;
+			children = (
+				2D03529F27FB2BD3005B038E /* InfoView.swift */,
+				2D0352A027FB2BD3005B038E /* InfoView.xib */,
+			);
+			path = InfoView;
+			sourceTree = "<group>";
+		};
 		2D122DFF27E9C2B2003FE193 /* Chapter7(8)TransformingOper */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,7 +225,7 @@
 			path = support;
 			sourceTree = "<group>";
 		};
-		2D2080EE27F37B700078EA29 /* Chapter12(13)RxCocoa */ = {
+		2D2080EE27F37B700078EA29 /* Chapter12(13)(14)RxCocoa */ = {
 			isa = PBXGroup;
 			children = (
 				2D20810227F99ED10078EA29 /* Extensions */,
@@ -220,7 +235,7 @@
 				2D2080FC27F37BE40078EA29 /* Wundercast.storyboard */,
 				2D2080FE27F37BFC0078EA29 /* WundercastVC.swift */,
 			);
-			path = "Chapter12(13)RxCocoa";
+			path = "Chapter12(13)(14)RxCocoa";
 			sourceTree = "<group>";
 		};
 		2D2080EF27F37BC20078EA29 /* Assets */ = {
@@ -243,6 +258,7 @@
 		2D2080F727F37BCC0078EA29 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				2D03529E27FB2BD3005B038E /* InfoView */,
 				2D2080F827F37BCC0078EA29 /* Colors.swift */,
 				2D2080F927F37BCC0078EA29 /* Appearance.swift */,
 			);
@@ -254,6 +270,7 @@
 			children = (
 				2D20810027F99EC20078EA29 /* CLLocationManager+Rx.swift */,
 				2D20810327F9C2680078EA29 /* MKMapView+Rx.swift */,
+				2D0352A727FDF0E2005B038E /* RxReachability.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -362,7 +379,7 @@
 				2D122DFF27E9C2B2003FE193 /* Chapter7(8)TransformingOper */,
 				2DBA199627ECA0C400B3C4C9 /* Chapter9(10)CombiningOperators */,
 				2D2080CF27F220240078EA29 /* Chapter11TimebasedOp */,
-				2D2080EE27F37B700078EA29 /* Chapter12(13)RxCocoa */,
+				2D2080EE27F37B700078EA29 /* Chapter12(13)(14)RxCocoa */,
 				2D276E1D27E5D396001378CF /* Main.storyboard */,
 				2DD91CC727DFB1D0007D0113 /* Assets.xcassets */,
 				2DD91CC927DFB1D0007D0113 /* LaunchScreen.storyboard */,
@@ -521,6 +538,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D0352A427FB2BD3005B038E /* InfoView.xib in Resources */,
 				2D276E1E27E5D396001378CF /* Main.storyboard in Resources */,
 				2DD0922427E108F3000F56A3 /* Copyright.txt in Resources */,
 				2DD91CCB27DFB1D0007D0113 /* LaunchScreen.storyboard in Resources */,
@@ -684,6 +702,7 @@
 				2DD91CC327DFB1CE007D0113 /* Chapter2VC.swift in Sources */,
 				2DBA19AF27EF23B500B3C4C9 /* DownloadView.swift in Sources */,
 				2D122E0427EB7907003FE193 /* ActivityController.swift in Sources */,
+				2D0352A327FB2BD3005B038E /* InfoView.swift in Sources */,
 				2DBA19A527ECDB7A00B3C4C9 /* EOEnvelope.swift in Sources */,
 				2DBA199827ECA0EE00B3C4C9 /* Chapter9VC.swift in Sources */,
 				2D2080EB27F223E30078EA29 /* Timer.swift in Sources */,
@@ -705,6 +724,7 @@
 				2D122DFE27E913AF003FE193 /* UIViewController+RxAlert.swift in Sources */,
 				2DD91CC127DFB1CE007D0113 /* SceneDelegate.swift in Sources */,
 				2DBA19AC27ECDBED00B3C4C9 /* EventCell.swift in Sources */,
+				2D0352A827FDF0E2005B038E /* RxReachability.swift in Sources */,
 				2D276E2227E72C25001378CF /* UIImage+Hash.swift in Sources */,
 				2DBA19A327ECDB7A00B3C4C9 /* EOCategory.swift in Sources */,
 				2D2080D127F220460078EA29 /* Chapter11VC.swift in Sources */,
