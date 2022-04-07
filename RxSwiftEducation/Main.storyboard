@@ -23,10 +23,10 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zI1-h2-SJi">
-                                                <rect key="frame" x="146.5" y="49" width="121" height="798"/>
+                                                <rect key="frame" x="136.5" y="41.5" width="141.5" height="813.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sMN-wq-S5d">
-                                                        <rect key="frame" x="0.0" y="0.0" width="121" height="46.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="141.5" height="46.5"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Chapter2" subtitle="Observable">
@@ -37,7 +37,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HC7-P5-1Qj">
-                                                        <rect key="frame" x="0.0" y="66.5" width="121" height="46.5"/>
+                                                        <rect key="frame" x="0.0" y="66.5" width="141.5" height="46.5"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Chapter3" subtitle="Subject">
@@ -48,7 +48,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUZ-gB-wNI">
-                                                        <rect key="frame" x="0.0" y="133" width="121" height="46.5"/>
+                                                        <rect key="frame" x="0.0" y="133" width="141.5" height="46.5"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Chapter4(6)" subtitle="inPractice">
@@ -59,7 +59,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="555-K3-ynN">
-                                                        <rect key="frame" x="0.0" y="199.5" width="121" height="46.5"/>
+                                                        <rect key="frame" x="0.0" y="199.5" width="141.5" height="46.5"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Chapter5" subtitle="FilteringOper">
@@ -70,7 +70,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2EH-h2-2r9">
-                                                        <rect key="frame" x="0.0" y="266" width="121" height="46.5"/>
+                                                        <rect key="frame" x="0.0" y="266" width="141.5" height="46.5"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Chapter7" subtitle="TranformlngOper">
@@ -81,7 +81,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LiB-qc-oUb">
-                                                        <rect key="frame" x="0.0" y="332.5" width="121" height="46.5"/>
+                                                        <rect key="frame" x="0.0" y="332.5" width="141.5" height="46.5"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Chapter8" subtitle="inPractice">
@@ -92,7 +92,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4K0-WO-CpG">
-                                                        <rect key="frame" x="0.0" y="399" width="121" height="46.5"/>
+                                                        <rect key="frame" x="0.0" y="399" width="141.5" height="46.5"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Chapter9" subtitle="CombiningOper">
@@ -103,7 +103,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Lv-xl-nhD">
-                                                        <rect key="frame" x="0.0" y="465.5" width="121" height="46.5"/>
+                                                        <rect key="frame" x="0.0" y="465.5" width="141.5" height="46.5"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Chapter10" subtitle="inPractice">
@@ -114,7 +114,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIb-WV-jrh">
-                                                        <rect key="frame" x="0.0" y="532" width="121" height="46.5"/>
+                                                        <rect key="frame" x="0.0" y="532" width="141.5" height="46.5"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Chapter11" subtitle="TimeBasedOper">
@@ -125,10 +125,10 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAv-r6-E93">
-                                                        <rect key="frame" x="0.0" y="598.5" width="121" height="46.5"/>
+                                                        <rect key="frame" x="0.0" y="598.5" width="141.5" height="46.5"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Chapter12" subtitle="RxCocoa">
+                                                        <buttonConfiguration key="configuration" style="plain" title="Chapter12(13)(14)" subtitle="RxCocoa">
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
@@ -136,15 +136,18 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sxr-Q6-dGv">
-                                                        <rect key="frame" x="0.0" y="665" width="121" height="31"/>
+                                                        <rect key="frame" x="0.0" y="665" width="141.5" height="46.5"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Chapter13">
+                                                        <buttonConfiguration key="configuration" style="plain" title="Chapter15" subtitle="Schedulers">
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <segue destination="UZZ-bv-Nak" kind="show" id="0cY-0g-tm7"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n86-67-aII">
-                                                        <rect key="frame" x="0.0" y="716" width="121" height="31"/>
+                                                        <rect key="frame" x="0.0" y="731.5" width="141.5" height="31"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Chapter14">
@@ -152,7 +155,7 @@
                                                         </buttonConfiguration>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25a-fA-R0y">
-                                                        <rect key="frame" x="0.0" y="767" width="121" height="31"/>
+                                                        <rect key="frame" x="0.0" y="782.5" width="141.5" height="31"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Chapter15">
@@ -415,6 +418,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x6Q-uM-Aw6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1695" y="341"/>
+        </scene>
+        <!--Chapter15VC-->
+        <scene sceneID="P1v-gr-ZSC">
+            <objects>
+                <viewController id="UZZ-bv-Nak" customClass="Chapter15VC" customModule="RxSwiftEducation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jqO-da-3nR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Look at console" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="veD-sa-61J">
+                                <rect key="frame" x="147" y="39.5" width="120" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="75g-9r-d3H"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="veD-sa-61J" firstAttribute="centerX" secondItem="jqO-da-3nR" secondAttribute="centerX" id="57M-hb-O6Z"/>
+                            <constraint firstItem="veD-sa-61J" firstAttribute="centerY" secondItem="jqO-da-3nR" secondAttribute="centerY" id="P2Z-Ar-DKB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="los-BE-5uP"/>
+                    <size key="freeformSize" width="414" height="100"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="umt-nj-cMm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1880" y="506"/>
         </scene>
     </scenes>
     <resources>
