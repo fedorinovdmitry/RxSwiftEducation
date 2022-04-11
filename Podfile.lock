@@ -1,7 +1,10 @@
 PODS:
+  - Hue (5.0.0)
   - Kingfisher (7.2.0)
   - "NSObject+Rx (5.2.2)":
     - RxSwift (~> 6.2)
+  - RxBlocking (6.5.0):
+    - RxSwift (= 6.5.0)
   - RxCocoa (6.5.0):
     - RxRelay (= 6.5.0)
     - RxSwift (= 6.5.0)
@@ -20,8 +23,10 @@ PODS:
     - RxSwift (= 6.5.0)
 
 DEPENDENCIES:
+  - Hue
   - Kingfisher
   - "NSObject+Rx"
+  - RxBlocking
   - RxCocoa
   - RxRelay
   - RxSwift
@@ -30,8 +35,10 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - Hue
     - Kingfisher
     - "NSObject+Rx"
+    - RxBlocking
     - RxCocoa
     - RxRelay
     - RxSwift
@@ -39,14 +46,16 @@ SPEC REPOS:
     - RxTest
 
 SPEC CHECKSUMS:
+  Hue: c129cb67be7d093a82bbbc30ce8a96757bf6f37a
   Kingfisher: 3ac0b75b155cabc0e544877d1a4deea29feece92
   "NSObject+Rx": 61cf1f7306a73dcef8b36649198af0813ec18dfd
+  RxBlocking: 04b5fd28bb5ea49f7d64b80db8bbfe50d9cc1c7d
   RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
   RxSwiftExt: d61c4b9b06e0a448041b1c659e0f1b5c5a035afc
   RxTest: eb2d23adefc5a5ebf5779c7792fa3edfe6ebcc17
 
-PODFILE CHECKSUM: e4e7027a9770e85cff0b15d562b394a5149b76fa
+PODFILE CHECKSUM: e546d90fdfcddbab06ced965a81b5ff7bce31b80
 
 COCOAPODS: 1.11.3

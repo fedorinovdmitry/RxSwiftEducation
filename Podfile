@@ -11,10 +11,12 @@ target 'RxSwiftEducation' do
   pod 'RxSwiftExt'
   pod 'Kingfisher'
   pod 'NSObject+Rx'
+  pod 'Hue'
 
   target 'RxSwiftEducationTests' do
     inherit! :search_paths
     pod 'RxTest'
+    pod 'RxBlocking'
   end
 
   target 'RxSwiftEducationUITests' do
