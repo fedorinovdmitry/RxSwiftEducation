@@ -12,11 +12,16 @@ target 'RxSwiftEducation' do
   pod 'Kingfisher'
   pod 'NSObject+Rx'
   pod 'Hue'
+  pod 'SwiftyJSON'
+  pod 'Gifu'
 
   target 'RxSwiftEducationTests' do
     inherit! :search_paths
     pod 'RxTest'
+    pod 'Nimble'
+    pod 'RxNimble'
     pod 'RxBlocking'
+    pod 'OHHTTPStubs/Swift'
   end
 
   target 'RxSwiftEducationUITests' do
